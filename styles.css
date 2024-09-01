@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #50b7f5; /* Light Gray */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1DA1F2; /* Twitter Blue */
+    color: #FFFFFF; /* White */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.dropdown {
+    background: none;
+    border: none;
+    color: #FFFFFF; /* White */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #E1E8ED; /* Gray */
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #FFFFFF; /* White */
+    padding: 20px;
+    border-right: 1px solid #E1E8ED; /* Gray */
+    height: calc(100vh - 60px); /* Adjust height to fit in the container */
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1DA1F2; /* Twitter Blue */
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFFFFF; /* White */
+    overflow-y: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #1DA1F2; /* Twitter Blue */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #14171A; /* Dark Blue */
+}
+
+form {
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #14171A; /* Dark Blue */
+}
+
+input[type="text"], input[type="email"], select, input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #E1E8ED; /* Gray */
+    border-radius: 5px;
+    background-color: #FFFFFF; /* White */
+    color: #14171A; /* Dark Blue */
+}
+
+button {
+    background-color: #1DA1F2; /* Twitter Blue */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1991DB; /* Slightly darker Twitter Blue */
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #1DA1F2; /* Twitter Blue */
+    text-decoration: none;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Settings Page Mockup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Logo.svg" alt="Flitter Logo" class="logo">
+            <h1>Settings and Privacy</h1>
+            <div class="user-info">
+                <img src="user-avatar.png" alt="User Avatar" class="avatar">
+                <button class="dropdown">▼</button>
+            </div>
+            <input type="search" placeholder="Search settings" class="search-bar">
+        </header>
+        
+        <div class="main-container">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#account">Account</a></li>
+                    <li><a href="#privacy">Privacy and Safety</a></li>
+                    <li><a href="#notifications">Notifications</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                    <li><a href="#your-account">Your Account</a></li>
+                    <li><a href="#security">Security and Account Access</a></li>
+                    <li><a href="#content-preferences">Content Preferences</a></li>
+                    <li><a href="#display-sound">Display and Sound</a></li>
+                    <li><a href="#help">Help Center</a></li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                <section id="account">
+                    <h2>Account</h2>
+                    <form>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" value="YourUsername">
+                        
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" value="youremail@example.com">
+                        
+                        <button type="button">Change Password</button>
+                        
+                        <label for="language">Language:</label>
+                        <select id="language">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                        </select>
+                        
+                        <label for="timezone">Time Zone:</label>
+                        <select id="timezone">
+                            <option>UTC</option>
+                            <option>GMT</option>
+                            <option>EST</option>
+                        </select>
+                        
+                        <button type="button">Deactivate Your Account</button>
+                    </form>
+                </section>
+                
+                <section id="privacy">
+                    <h2>Privacy and Safety</h2>
+                    <form>
+                        <label for="tweet-privacy">Tweet Privacy:</label>
+                        <div>
+                            <input type="radio" id="public" name="tweet-privacy" value="public" checked>
+                            <label for="public">Public</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="protected" name="tweet-privacy" value="protected">
+                            <label for="protected">Protected</label>
+                        </div>
+                        
+                        <label for="personalization">Personalization:</label>
+                        <div>
+                            <input type="checkbox" id="personalized-ads" checked>
+                            <label for="personalized-ads">Personalized ads</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="personalized-suggestions" checked>
+                            <label for="personalized-suggestions">Personalized suggestions</label>
+                        </div>
+                        
+                        <label for="blocked-accounts">Blocked Accounts:</label>
+                        <input type="text" id="blocked-accounts" placeholder="View and manage blocked accounts">
+                        
+                        <label for="muted-accounts">Muted Accounts:</label>
+                        <input type="text" id="muted-accounts" placeholder="View and manage muted accounts">
+                        
+                        <label for="data-sharing">Data Sharing Settings:</label>
+                        <div>
+                            <input type="checkbox" id="data-sharing" checked>
+                            <label for="data-sharing">Share data with Twitter partners</label>
+                        </div>
+                    </form>
+                </section>
+                
+                <section id="notifications">
+                    <h2>Notifications</h2>
+                    <form>
+                        <label for="push-notifications">Push Notifications:</label>
+                        <div>
+                            <input type="checkbox" id="mentions" checked>
+                            <label for="mentions">Mentions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="messages" checked>
+                            <label for="messages">Messages</label>
+                        </div>
+                        
+                        <label for="email-notifications">Email Notifications:</label>
+                        <div>
+                            <input type="checkbox" id="new-followers" checked>
+                            <label for="new-followers">New followers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="retweets" checked>
+                            <label for="retweets">Retweets</label>
+                        </div>
+                        
+                        <label for="sms-notifications">SMS Notifications:</label>
+                        <div>
+                            <input type="checkbox" id="important-notifications">
+                            <label for="important-notifications">Important notifications</label>
+                        </div>
+                    </form>
+                </section>
+                
+                <section id="accessibility">
+                    <h2>Accessibility</h2>
+                    <form>
+                        <label for="text-size">Text Size:</label>
+                        <input type="range" id="text-size" min="12" max="24" value="16">
+                        
+                        <label for="high-contrast">High Contrast Mode:</label>
+                        <input type="checkbox" id="high-contrast">
+                        
+                        <label for="screen-reader">Screen Reader Support:</label>
+                        <select id="screen-reader">
+                            <option>Enabled</option>
+                            <option>Disabled</option>
+                        </select>
+                    </form>
+                </section>
+                
+                <section id="security">
+                    <h2>Security and Account Access</h2>
+                    <form>
+                        <label for="two-factor-auth">Two-Factor Authentication:</label>
+                        <input type="checkbox" id="two-factor-auth" checked>
+                        
+                        <button type="button">Change Password</button>
+                        
+                        <label for="app-passwords">App Passwords:</label>
+                        <input type="text" id="app-passwords" placeholder="Manage app passwords">
+                    </form>
+                </section>
+                
+                <section id="content-preferences">
+                    <h2>Content Preferences</h2>
+                    <form>
+                        <label for="content-filters">Content Filters:</label>
+                        <input type="text" id="content-filters" placeholder="Manage content filters">
+                        
+                        <label for="topics-followed">Topics Followed:</label>
+                        <input type="text" id="topics-followed" placeholder="Manage followed topics">
+                    </form>
+                </section>
+                
+                <section id="display-sound">
+                    <h2>Display and Sound</h2>
+                    <form>
+                        <label for="theme">Theme:</label>
+                        <div>
+                            <input type="radio" id="light-mode" name="theme" value="light" checked>
+                            <label for="light-mode">Light</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dark-mode" name="theme" value="dark">
+                            <label for="dark-mode">Dark</label>
+                        </div>
+                        
+                        <label for="sound-effects">Sound Effects:</label>
+                        <input type="checkbox" id="sound-effects" checked>
+                        
+                        <label for="autoplay-videos">Autoplay Videos:</label>
+                        <input type="checkbox" id="autoplay-videos">
+                    </form>
+                </section>
+                
+                <section id="help">
+                    <h2>Help Center</h2>
+                    <ul>
+                        <li><a href="#">Help Topics</a></li>
+                        <li><a href="#">Report a Problem</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
